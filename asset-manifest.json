@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/ekopakl/static/css/main.dc36cf06.css",
+    "main.js": "/ekopakl/static/js/main.e0ed1de1.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/ekopakl/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/hero.svg": "/ekopakl/static/media/hero.1309bff520d141e44a4f.svg",
+    "static/media/services.jpg": "/ekopakl/static/media/services.6332d8ff6c867cbb9dd9.jpg",
+    "static/media/logo.png": "/ekopakl/static/media/logo.3f4b69ec5f3113e2f556.png",
+    "static/media/photo__y.jpg": "/ekopakl/static/media/photo_5998895120449124720_y.4dae9b8fecd77dea027c.jpg",
+    "index.html": "/ekopakl/index.html",
+    "static/media/aboutUs.svg": "/ekopakl/static/media/aboutUs.f80784b6de60eac5192a.svg",
+    "static/media/aboutUsFooter.svg": "/ekopakl/static/media/aboutUsFooter.d2d05c8b7aa12462c82bbc71d7453126.svg",
+    "main.dc36cf06.css.map": "/ekopakl/static/css/main.dc36cf06.css.map",
+    "main.e0ed1de1.js.map": "/ekopakl/static/js/main.e0ed1de1.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/ekopakl/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc36cf06.css",
+    "static/js/main.e0ed1de1.js"
+  ]
+}
