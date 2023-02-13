@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: arial, sans-serif;
+}
+
+.hero {
+	background-image: url("assets/hero.svg");
+}
+
+.team {
+	clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+	background-color: #2F4858;
+}
+
+.about-us {
+	background-image: url("assets/aboutUs.svg");
+}
+
+.footer {
+	clip-path: polygon(0 0%, 100% 30%, 100% 100%, 0 100%);
+	background-color: #2F4858;
+}
+
+.neon:hover {
+	color: white;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #2F4858, 0 0 30px #2F4858, 0 0 40px #2F4858, 0 0 50px #2F4858, 0 0 75px #2F4858;
+  }
+
+@media (max-width: 1280px) {
+  .footer {
+	  clip-path: polygon(0 0%, 100% 10%, 100% 100%, 0 100%);
+	  background-color: #2F4858;
+  }
+}
+
+@media (max-width: 1024px) {
+	.team {
+		clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 97%);
+		background-color: #2f4858;
+	}
+	.footer {
+		clip-path: polygon(0 0%, 100% 10%, 100% 100%, 0 100%);
+		background-color: #2F4858;
+	}
+  }
+
+
+  @media (max-width: 640px) {
+	.team {
+		clip-path: polygon(0 0, 100% 1%, 100% 100%, 0 99%);
+		background-color: #2F4858;
+	}
+  }
