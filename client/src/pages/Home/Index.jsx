@@ -1,70 +1,25 @@
-import React, {useRef, useState, useEffect} from 'react';
-import Navbar from '../components/Navbar';
-import servicesImg from '../assets/services.jpg';
-import naderIMG from '../assets/photo_5998895120449124720_y.jpg';
-import cesarIMG from '../assets/photo_5998895120449124721_y.jpg';
-import qcsLogo from '../assets/qcs.jpg';
-import bankByblosLogo from '../assets/bankByblos.jpg';
-import dintaLogo from '../assets/dinta.jpg';
-import lawOfficeLogo from '../assets/lawOffice.jpg';
+import React from 'react';
+import Header from './Header';
+import Navbar from '../../components/Navbar';
+import servicesImg from '../../assets/services.jpg';
+import naderIMG from '../../assets/photo_5998895120449124720_y.jpg';
+import cesarIMG from '../../assets/photo_5998895120449124721_y.jpg';
+import qcsLogo from '../../assets/qcs.jpg';
+import bankByblosLogo from '../../assets/bankByblos.jpg';
+import dintaLogo from '../../assets/dinta.jpg';
+import lawOfficeLogo from '../../assets/lawOffice.jpg';
 import {MdEmail} from 'react-icons/md';
 import {BsFillTelephoneFill} from 'react-icons/bs';
 import {IoLocationSharp} from 'react-icons/io5';
 
 
-const Home = () => {
-
-  const [section, setSection] = useState('');
-
-  const heroRef = useRef(null);
-  const servicesRef = useRef(null);
-  const teamRef = useRef(null);
-  const partnersRef = useRef(null);
-  const contactUsRef = useRef(null);
-
-  useEffect(() => {
-    if(section==='services') {
-        servicesRef.current.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start',
-          });
-    }
-    else if(section==='ourTeam') {
-        teamRef.current.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start',
-        });
-    }
-    else if(section==='partners') {
-        partnersRef.current.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start',
-        });
-    }
-    else if(section==='contactUs') {
-        contactUsRef.current.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start',
-          });
-    }
-    else {
-        heroRef.current.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start',
-          });
-    }
-  }, [section]);
+const Index = () => {
 
   return (
     <div>
-      <Navbar setSection={setSection} />
-
-      <section className='hero bg-no-repeat bg-center bg-cover w-full h-screen flex flex-col justify-center md:px-24 px-6' ref={heroRef}>
-          <h1 className='text-[60px] font-bold text-white md:text-[80px] select-none'>EkoPak Sal</h1>
-          <p className='text-white text-[18px] md:text-[22px]'>Empowering your industry with reliable paper solutions</p>
-      </section>
-
-      <section className='flex flex-col lg:px-24 px-6 w-full' ref={servicesRef}>
+      <Navbar />  
+      <Header />
+      <section className='flex flex-col lg:px-24 px-6 w-full'>
           <h1 className='text-[42px] font-bold text-center'>Services</h1>
           <div className='lg:flex-row lg:justify-between flex flex-col items-center mt-24 lg:items-center w-full'>
               <p className='lg:w-[45%] mb-6 lg:mb-0 text-[22px] text-justify'>At EkoPak, we're dedicated to providing the highest quality industrial paper products and services. With a diverse range of options, expert consultation, and a commitment to customer satisfaction, we have everything you need to take your business to the next level. Partner with us today and experience the difference of working with a trusted industrial paper trading company.</p>
@@ -74,7 +29,7 @@ const Home = () => {
           </div>
       </section>
 
-      <section className='mt-12 team bg-primary-100 w-full pt-32 lg:px-24 px-6 pb-40' ref={teamRef}>
+      <section className='mt-12 team bg-primary-100 w-full pt-32 lg:px-24 px-6 pb-40'>
         <h1 className='text-[42px] font-bold text-center text-white'>Our Team</h1>
         <div className='flex lg:flex-row flex-col-reverse mt-12 items-center justify-between w-full'>
           <div>
@@ -99,7 +54,7 @@ const Home = () => {
         <i className='text-white text-[22px] text-justify'>In conclusion, the Industrial Paper Company is managed by a team of experienced and dedicated professionals who are committed to ensuring the success of the company. They bring a wealth of knowledge, experience, and expertise to their roles and are dedicated to delivering high-quality work that meets the needs of the company and its clients.</i>
       </section>
 
-      <section className='px-24' ref={partnersRef}>
+      <section className='px-24'>
         <h1 className='text-[42px] font-bold text-center'>Partners</h1>
         <div className='grid gap-12 lg:gap-4 lg:w-[960px] md:w-[500px] m-auto lg:grid-cols-4 md:grid-cols-2 grid-cols-1 items-center justify-center w-full mt-12 '>
           <img src={qcsLogo} className='m-auto w-[200px] h-[200px] rounded-xl border-[1px] border-primary-100' alt="" />
@@ -109,7 +64,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section ref={contactUsRef} className='footer py-24 text-white'>
+      <section className='footer py-24 text-white'>
         <h1 className='text-[42px] font-bold text-center'>Contact Us</h1>
         <div className='grid gap-8 xl:grid-cols-3 grid-cols-1 px-24 justify-center lg:justify-between mt-12'>
             <div className='flex flex-col items-center gap-4'>
@@ -139,4 +94,4 @@ const Home = () => {
   );
 }
 
-export default Home;
+export default Index;
