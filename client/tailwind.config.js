@@ -24,11 +24,11 @@ module.exports = {
     colors: {
       'primary': {
         100: '#810000',
-        200: '#000619'
       },
       'secondary': '#EEEBDD',
       'white': '#FFFFFF',
-      'black': '#000000'
+      'black': '#000000',
+      'navy': '#1B1717'
     }
   },
   

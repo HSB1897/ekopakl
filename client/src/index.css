@@ -10,7 +10,7 @@
 }
 
 .hero {
-	background-image: url("assets/hero.svg");
+	clip-path: polygon(0 0, 80% 0, 45% 100%, 0 100%);
 }
 
 .team {
