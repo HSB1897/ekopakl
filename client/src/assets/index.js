@@ -14,6 +14,10 @@ const images = {
     diariesServices2: require('./diaries_services_2.jpg'),
     diariesServices3: require('./diaries_services_3.png'),
     diariesServices4: require('./diaries_services_4.webp'),
+    qcsLogo: require('./qcs.jpg'),
+    bankByblosLogo: require('./bankByblos.jpg'),
+    dintaLogo: require('./dinta.jpg'),
+    lawOfficeLogo: require('./lawOffice.jpg'),
 } 
 
 export default images;
