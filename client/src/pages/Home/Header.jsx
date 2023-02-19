@@ -4,7 +4,7 @@ import images from '../../assets';
 
 const Header = () => {
   return (
-    <section className='bg-primary-100 w-full h-screen flex justify-end items-center min-h-[800px]'>
+    <section className='bg-primary-100 w-full h-screen flex justify-end items-center min-h-[800px]' id='header'>
 
         <div className='hero bg-secondary h-screen min-h-[800px] md:px-24 flex flex-col justify-center absolute top-0 left-0 w-full'>
               <h1 className='text-[60px] font-bold text-navy md:text-[90px] select-none'>EkoPak Sal</h1>

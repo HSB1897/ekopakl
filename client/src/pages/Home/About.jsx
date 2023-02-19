@@ -5,7 +5,7 @@ import Headline from '../../components/Headline';
 
 const About = () => {
   return (
-    <Container className='bg-secondary flex gap-10'>
+    <Container className='bg-secondary flex gap-10' id='about'>
       <div className='w-1/2'> </div>
       <div className='flex flex-col gap-10 w-1/2'>
           <Headline className='text-navy'>About Us</Headline>

@@ -8,7 +8,7 @@ const Services = () => {
   const [service, setService] = useState("paper");
 
   return (
-    <Container>
+    <Container id='services'>
           <Headline className='text-white'>Services</Headline>
           <div className='flex mt-12 justify-between'>
             <img src={service==="paper" ? images.paperServices1 : service==="restaurant" ? images.restaurantServices1 : service==="diaries" ? images.diariesServices1 : null} alt="" className='h-[500px] w-[400px] object-cover rounded-2xl' />

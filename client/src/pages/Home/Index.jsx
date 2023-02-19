@@ -1,14 +1,11 @@
 import React from 'react';
 import Header from './Header';
 import Navbar from '../../components/Navbar';
-import naderIMG from '../../assets/photo_5998895120449124720_y.jpg';
-import cesarIMG from '../../assets/photo_5998895120449124721_y.jpg';
 import Services from './Services';
 import About from './About';
 import Team from './Team';
 import Partners from './Partners';
 import Contact from './Contact';
-
 
 const Index = () => {
 
