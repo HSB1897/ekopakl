@@ -3,17 +3,11 @@ import Header from './Header';
 import Navbar from '../../components/Navbar';
 import naderIMG from '../../assets/photo_5998895120449124720_y.jpg';
 import cesarIMG from '../../assets/photo_5998895120449124721_y.jpg';
-import qcsLogo from '../../assets/qcs.jpg';
-import bankByblosLogo from '../../assets/bankByblos.jpg';
-import dintaLogo from '../../assets/dinta.jpg';
-import lawOfficeLogo from '../../assets/lawOffice.jpg';
-import {MdEmail} from 'react-icons/md';
-import {BsFillTelephoneFill} from 'react-icons/bs';
-import {IoLocationSharp} from 'react-icons/io5';
 import Services from './Services';
 import About from './About';
 import Team from './Team';
 import Partners from './Partners';
+import Contact from './Contact';
 
 
 const Index = () => {
@@ -26,8 +20,9 @@ const Index = () => {
       <About />
       <Team />
       <Partners />
+      <Contact />
 
-      <section className='mt-12 team bg-primary-100 w-full pt-32 lg:px-24 px-6 pb-40'>
+      {/* <section className='mt-12 team bg-primary-100 w-full pt-32 lg:px-24 px-6 pb-40'>
         <h1 className='text-[42px] font-bold text-center text-white'>Our Team</h1>
         <div className='flex lg:flex-row flex-col-reverse mt-12 items-center justify-between w-full'>
           <div>
@@ -50,44 +45,9 @@ const Index = () => {
           </div>
         </div>
         <i className='text-white text-[22px] text-justify'>In conclusion, the Industrial Paper Company is managed by a team of experienced and dedicated professionals who are committed to ensuring the success of the company. They bring a wealth of knowledge, experience, and expertise to their roles and are dedicated to delivering high-quality work that meets the needs of the company and its clients.</i>
-      </section>
+      </section> */}
 
-      <section className='px-24'>
-        <h1 className='text-[42px] font-bold text-center'>Partners</h1>
-        <div className='grid gap-12 lg:gap-4 lg:w-[960px] md:w-[500px] m-auto lg:grid-cols-4 md:grid-cols-2 grid-cols-1 items-center justify-center w-full mt-12 '>
-          <img src={qcsLogo} className='m-auto w-[200px] h-[200px] rounded-xl border-[1px] border-primary-100' alt="" />
-          <img src={bankByblosLogo} className='m-auto w-[200px] h-[200px] rounded-xl ' alt="" />
-          <img src={dintaLogo} className='m-auto w-[200px] h-[200px] rounded-xl border-[1px] border-primary-100' alt="" />
-          <img src={lawOfficeLogo} className='m-auto w-[200px] h-[200px] rounded-xl border-[1px] border-primary-100' alt="" />
-        </div>
-      </section>
-
-      <section className='footer py-24 text-white'>
-        <h1 className='text-[42px] font-bold text-center'>Contact Us</h1>
-        <div className='grid gap-8 xl:grid-cols-3 grid-cols-1 px-24 justify-center lg:justify-between mt-12'>
-            <div className='flex flex-col items-center gap-4'>
-              <IoLocationSharp className='text-white text-[40px]' />
-              <div className='w-[400px] flex flex-col gap-3 items-center'>
-                  <h1 className=' font-bold text-[24px]'>Address</h1>
-                  <p className='text-center text-[18px]'>5th floor Chawki Nader Bldg, Chukri Chkair Street,Achrafieh, Beirut Lebanon</p>
-              </div>
-            </div>
-            <div className='flex flex-col items-center gap-4'>
-              <MdEmail className='text-white text-[40px]' />
-              <div className='w-[400px] flex flex-col gap-3 items-center'>
-                  <h1 className=' font-bold text-[24px]'>Email</h1>
-                  <a className='text-center text-[18px] hover:underline' href="mailto:contact@ekopak-sal.com ">contact@ekopak-sal.com</a>
-              </div>
-            </div>
-            <div className='flex flex-col items-center gap-4'>
-              <BsFillTelephoneFill className='text-white text-[40px]' />
-              <div className='w-[400px] flex flex-col gap-3 items-center'>
-                  <h1 className=' font-bold text-[24px]'>Phone</h1>
-                  <p className='text-center text-[18px]'>+961 3 793536</p>
-              </div>
-            </div>
-        </div>
-      </section>
+      
     </div>
   );
 }
