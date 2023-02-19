@@ -11,6 +11,7 @@ import {MdEmail} from 'react-icons/md';
 import {BsFillTelephoneFill} from 'react-icons/bs';
 import {IoLocationSharp} from 'react-icons/io5';
 import Services from './Services';
+import About from './About';
 
 
 const Index = () => {
@@ -20,6 +21,7 @@ const Index = () => {
       <Navbar />  
       <Header />
       <Services />
+      <About />
 
       <section className='mt-12 team bg-primary-100 w-full pt-32 lg:px-24 px-6 pb-40'>
         <h1 className='text-[42px] font-bold text-center text-white'>Our Team</h1>
