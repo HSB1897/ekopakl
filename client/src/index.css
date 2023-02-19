@@ -13,6 +13,18 @@
 	clip-path: polygon(0 0, 80% 0, 45% 100%, 0 100%);
 }
 
+.paper {
+	background-image: url("assets/paper_services_2.jpg");
+}
+
+.restaurant {
+	background-image: url("assets/restaurant_services_2.jpg");
+}
+
+.diaries {
+	background-image: url("assets/diaries_services_2.jpg");
+}
+
 .team {
 	clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
 	background-color: #2F4858;

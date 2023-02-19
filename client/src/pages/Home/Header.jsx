@@ -4,9 +4,9 @@ import images from '../../assets';
 
 const Header = () => {
   return (
-    <section className='bg-primary-100 w-full h-screen flex justify-end items-center'>
+    <section className='bg-primary-100 w-full h-screen flex justify-end items-center min-h-[800px]'>
 
-        <div className='hero bg-secondary h-screen md:px-24 flex flex-col justify-center absolute top-0 left-0 w-full'>
+        <div className='hero bg-secondary h-screen min-h-[800px] md:px-24 flex flex-col justify-center absolute top-0 left-0 w-full'>
               <h1 className='text-[60px] font-bold text-navy md:text-[90px] select-none'>EkoPak Sal</h1>
               <p className='text-navy text-[18px] md:text-[28px] max-w-[650px] mt-6'>Quality supplies for every aspect of your business</p>
               <i className='text-navy text-[18px] md:text-[22px] max-w-[650px] mt-4'> Quality is essential in every aspect of business, and our products are designed to meet that need. Whether you need industry paper, diaries, or restaurant kitchen equipment, we provide top</i>

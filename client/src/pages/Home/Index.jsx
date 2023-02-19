@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from './Header';
 import Navbar from '../../components/Navbar';
-import servicesImg from '../../assets/services.jpg';
 import naderIMG from '../../assets/photo_5998895120449124720_y.jpg';
 import cesarIMG from '../../assets/photo_5998895120449124721_y.jpg';
 import qcsLogo from '../../assets/qcs.jpg';
@@ -11,6 +10,7 @@ import lawOfficeLogo from '../../assets/lawOffice.jpg';
 import {MdEmail} from 'react-icons/md';
 import {BsFillTelephoneFill} from 'react-icons/bs';
 import {IoLocationSharp} from 'react-icons/io5';
+import Services from './Services';
 
 
 const Index = () => {
@@ -19,15 +19,7 @@ const Index = () => {
     <div>
       <Navbar />  
       <Header />
-      <section className='flex flex-col lg:px-24 px-6 w-full'>
-          <h1 className='text-[42px] font-bold text-center'>Services</h1>
-          <div className='lg:flex-row lg:justify-between flex flex-col items-center mt-24 lg:items-center w-full'>
-              <p className='lg:w-[45%] mb-6 lg:mb-0 text-[22px] text-justify'>At EkoPak, we're dedicated to providing the highest quality industrial paper products and services. With a diverse range of options, expert consultation, and a commitment to customer satisfaction, we have everything you need to take your business to the next level. Partner with us today and experience the difference of working with a trusted industrial paper trading company.</p>
-              <div className='drop-shadow-[0_35px_35px_rgba(0,0,0,0.7)] lg:w-[45%] max-w-[500px]'>
-                <img src={servicesImg} alt="" className='rounded-xl' />
-              </div>
-          </div>
-      </section>
+      <Services />
 
       <section className='mt-12 team bg-primary-100 w-full pt-32 lg:px-24 px-6 pb-40'>
         <h1 className='text-[42px] font-bold text-center text-white'>Our Team</h1>
