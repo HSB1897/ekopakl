@@ -9,6 +9,21 @@
 	font-family: arial, sans-serif;
 }
 
+.nav-item::before {
+	content: "";
+	position: absolute;
+	bottom: -5px; 
+	left: 0;
+	width: 0;
+	height: 2px;
+	background-color: #1B1717; 
+	transition: width 0.4s ease; 
+  }
+  
+  .nav-item:hover::before {
+	width: 100%;
+  }
+
 .hero {
 	clip-path: polygon(0 0, 80% 0, 45% 100%, 0 100%);
 }
