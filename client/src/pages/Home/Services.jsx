@@ -1,13 +1,15 @@
 import React, {useState} from 'react';
 import images from '../../assets';
+import Container from '../../components/Container';
+import Headline from '../../components/Headline';
 
 const Services = () => {
 
   const [service, setService] = useState("paper");
 
   return (
-    <section className=' bg-primary-100 lg:px-24 py-12'>
-          <h1 className='text-[52px] font-bold text-white'>Services</h1>
+    <Container>
+          <Headline className='text-white'>Services</Headline>
           <div className='flex mt-12 justify-between'>
             <img src={service==="paper" ? images.paperServices1 : service==="restaurant" ? images.restaurantServices1 : service==="diaries" ? images.diariesServices1 : null} alt="" className='h-[500px] w-[400px] object-cover rounded-2xl' />
             <div className='flex flex-col gap-10'>
@@ -23,7 +25,7 @@ const Services = () => {
                 <img src={service==="paper" ? images.paperServices4 : service==="restaurant" ? images.restaurantServices4 : service==="diaries" ? images.diariesServices4 : null}  alt="" className='w-[400px] object-cover h-1/2 rounded-2xl' />
             </div>
           </div>
-    </section>
+    </Container>
   );
 }
 

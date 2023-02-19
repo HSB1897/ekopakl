@@ -12,6 +12,7 @@ import {BsFillTelephoneFill} from 'react-icons/bs';
 import {IoLocationSharp} from 'react-icons/io5';
 import Services from './Services';
 import About from './About';
+import Team from './Team';
 
 
 const Index = () => {
@@ -22,6 +23,7 @@ const Index = () => {
       <Header />
       <Services />
       <About />
+      <Team />
 
       <section className='mt-12 team bg-primary-100 w-full pt-32 lg:px-24 px-6 pb-40'>
         <h1 className='text-[42px] font-bold text-center text-white'>Our Team</h1>
