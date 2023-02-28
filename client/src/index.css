@@ -28,6 +28,10 @@
 	clip-path: polygon(0 0, 80% 0, 45% 100%, 0 100%);
 }
 
+.hero-img {
+	background-image: url("assets/diaries_header.webp");
+}
+
 .paper {
 	background-image: url("assets/paper_services_2.jpg");
 }
