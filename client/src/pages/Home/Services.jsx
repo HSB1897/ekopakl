@@ -7,7 +7,7 @@ const Services = () => {
 
   const [isSmallScreen, setIsSmallScreen] = useState(false);
   const [service, setService] = useState("paper");
-  const serviceNameClass = 'text-white text-[32px] hover:bg-white hover:text-primary-100 duration-200 select-none cursor-pointer py-3';
+  const serviceNameClass = 'text-white xl:text-[32px] text-[28px] hover:bg-white hover:text-primary-100 duration-200 select-none cursor-pointer py-3';
   const serviceNameSmallScreenClass = 'text-white text-[24px] hover:bg-white hover:text-primary-100 duration-200 select-none cursor-pointer py-3';
 
   const handleResize = () => {
@@ -29,9 +29,9 @@ const Services = () => {
       <Container id='services'>
             <Headline className='text-white'>Services</Headline>
             <div className='flex mt-12 justify-between'>
-              <img src={service==="paper" ? images.paperServices1 : service==="restaurant" ? images.restaurantServices1 : service==="diaries" ? images.diariesServices1 : null} alt="" className='h-[500px] w-[400px] object-cover rounded-2xl' />
-              <div className='flex flex-col gap-10'>
-                 <div className='flex flex-col text-center'>
+              <img src={service==="paper" ? images.paperServices1 : service==="restaurant" ? images.restaurantServices1 : service==="diaries" ? images.diariesServices1 : null} alt="" className='xl:h-[500px] h-[400px] w-1/3 object-cover rounded-2xl' />
+              <div className='flex flex-col gap-10 w-1/3 mx-8'>
+                 <div className='flex flex-col text-center w-full'>
                     <h2 className={service==='paper' ? serviceNameClass + ' bg-white text-primary-100' : serviceNameClass} onClick={() => setService("paper")}>Industry Paper</h2>
                     <div className='w-full h-[1px] bg-white'></div> 
                     <h2 className={service==='restaurant' ? serviceNameClass + ' bg-white text-primary-100' : serviceNameClass} onClick={() => setService("restaurant")}>Industrial Kitchen Equipment</h2>
@@ -40,9 +40,9 @@ const Services = () => {
                  </div>
                  <div className={`${service} w-full bg-cover bg-center bg-no-repeat flex-1 bg-white rounded-2xl`}></div>
               </div>
-              <div className='flex flex-col h-[500px]'>
-                  <img src={service==="paper" ? images.paperServices3 : service==="restaurant" ? images.restaurantServices3 : service==="diaries" ? images.diariesServices3 : null}  alt="" className='w-[400px] object-cover mb-10 h-1/2 rounded-2xl' />
-                  <img src={service==="paper" ? images.paperServices4 : service==="restaurant" ? images.restaurantServices4 : service==="diaries" ? images.diariesServices4 : null}  alt="" className='w-[400px] object-cover h-1/2 rounded-2xl' />
+              <div className='flex flex-col xl:h-[500px] h-[400px] w-1/3'>
+                  <img src={service==="paper" ? images.paperServices3 : service==="restaurant" ? images.restaurantServices3 : service==="diaries" ? images.diariesServices3 : null}  alt="" className=' object-cover flex-1 mb-10 h-1/2 rounded-2xl' />
+                  <img src={service==="paper" ? images.paperServices4 : service==="restaurant" ? images.restaurantServices4 : service==="diaries" ? images.diariesServices4 : null}  alt="" className=' object-cover flex-1 h-1/2 rounded-2xl' />
               </div>
             </div>
       </Container>
