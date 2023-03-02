@@ -8,7 +8,7 @@ const Scroll = (props) => {
             to={props.to}
             spy={true}
             smooth={true}
-            // offset={-70}
+            offset={-70}
             duration={500}
     >{props.children}</Link>
   );

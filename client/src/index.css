@@ -9,6 +9,10 @@
 	font-family: arial, sans-serif;
 }
 
+.nav-white-item::before {
+	background-color: white !important;
+}
+
 .nav-item::before {
 	content: "";
 	position: absolute;
@@ -84,6 +88,12 @@
 		clip-path: polygon(0 0%, 100% 10%, 100% 100%, 0 100%);
 		background-color: #2F4858;
 	}
+  }
+
+  @media (max-width: 768px) {
+	.nav-item::before {
+		background-color: white; 
+	  }
   }
 
 
