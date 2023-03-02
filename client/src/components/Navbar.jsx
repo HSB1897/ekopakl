@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <div className={isScrolled ? openNav ? openNavBarClass + '  bg-navy/90 md:bg-navy/90 lg:w-full' : closedNavBarClass + ' bg-navy/90 md:bg-navy/90 lg:w-full' : openNav ? openNavBarClass : closedNavBarClass}>
       <GiHamburgerMenu className={`absolute top-6 right-6 md:hidden ${isScrolled || openNav ? 'text-white' : 'text-navy'} text-[24px] cursor-pointer`} onClick={() => setOpenNav(!openNav)} />
-      <img src={logo} alt="" className={openNav ? 'w-[60px] mb-4 md:mb-0 select-none self-start' : ' select-none hidden md:block md:w-[60px] md:mb-0'} />
+      <Scroll to='header'><img src={logo} alt="" className={openNav ? 'w-[60px] mb-4 md:mb-0 select-none self-start cursor-pointer' : 'cursor-pointer select-none w-[60px] self-start'} /></Scroll>
       <div className={openNav ? 'flex flex-col md:flex-row gap-6 select-none md:text-left text-center' : 'hidden md:flex md:flex-row md:gap-6 md:select-none'}>
           <li className={`text-[20px] font-semibold ${isScrolled ? 'text-white nav-white-item' : 'md:text-navy text-white'} cursor-pointer relative nav-item list-none`}><Scroll to='services'>Services</Scroll></li>
           <li className={`text-[20px] font-semibold ${isScrolled ? 'text-white nav-white-item' : 'md:text-navy text-white'} cursor-pointer relative nav-item list-none`}><Scroll to='about'>About</Scroll></li>
